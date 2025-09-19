@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">E-Learn</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Learn Anytime, Anywhere</h1>
+    <p>Access thousands of online courses taught by experts.</p>
+    <button>Browse Courses</button>
+  </section>
+
+  <!-- Course Cards -->
+  <section class="courses">
+    <h2>Featured Courses</h2>
+    <div class="course-grid">
+      <div class="course-card" onclick="showCourseDetails('JavaScript Essentials', 'Learn JavaScript from scratch.')">
+        <img src="https://via.placeholder.com/300x150" alt="JS Course" />
+        <h3>JavaScript Essentials</h3>
+        <p>Beginner • 5 hours</p>
+      </div>
+      <div class="course-card" onclick="showCourseDetails('HTML & CSS Mastery', 'Master front-end development.')">
+        <img src="https://via.placeholder.com/300x150" alt="HTML CSS Course" />
+        <h3>HTML & CSS Mastery</h3>
+        <p>Beginner • 4 hours</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="courseModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
